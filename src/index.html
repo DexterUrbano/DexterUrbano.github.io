@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>PRACTICE</title>
+</head>
+<body class="font-mono">
+    
+    <div class="text-gray-600 bg-white grid md:grid-cols-7"><!--content wrapper-->
+        <div class="md:col-span-1 bg-neutral-200"><!--start of nav-->
+            <nav class="text-left md:fixed top-0 left-0 right-0">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b-0 text-lg">
+                        <a href="/">Bicolnon</a>
+                    </h1>
+                    <div class="px-4 md:hidden cursor-pointer" id="burger">
+                        <svg class="w-10 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </div>
+                </div>
+                <ul class="pl-3 hidden md:block" id="menu">
+                    <li class="text-gray-900 font-bold">
+                        <a href="#" class="pr-5 flex justify-end md:justify-start md:mt-3 mt-3 md:space-x-2 space-x-2 md:border-l-4 border-r-4 md:border-red-400 border-red-400">
+                            <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 
+                            1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                            <span class="mr-5">Home</span>
+                        </a>
+                    </li>
+                    <li class="text-gray-900 font-bold">
+                        <a href="#" class="pr-3 flex justify-end md:justify-start md:mt-3 mt-3 md:space-x-2 space-x-2 md:border-l-4 border-r-4 md:border-neutral-200 border-neutral-200">
+                            <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 
+                            3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="mr-3">About</span>
+                        </a>
+                    </li>
+                    <li class="text-gray-900 font-bold">
+                        <a href="#" class="flex justify-end mb-2 md:justify-start md:mt-3 mt-3 md:space-x-2 space-x-1 md:border-l-4 border-r-4 md:border-neutral-200 border-neutral-200">
+                            <svg class="w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 
+                            0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--End of nav-->
+
+        <main class="px-16 py-6 bg-neutral-100 md:col-span-6 border-l border-gray-100 overflow-y-hidden relative">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="text-red-500 btn border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-300">Log in</a>
+                <a href="#" class="text-red-500 btn ml-3 border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-300">Sign up</a>
+            </div>
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Bicol</h2>
+                <h3 class="text-2xl font-semibold">Ultimate great dish</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipe</h4>
+                <div class="mt-8 grid md:grid-cols-2 gap-2 lg:grid-cols-3 gap-2">
+                    <!--cards go here-->
+                    <div class="card hover:shadow-2xl ease-in duration-300">
+                        <img src="../img/bx.webp" alt="Bicol express" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-3">
+                            <span class="font-bold">Bicol express</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Canor</span>
+                        </div>
+                        <!--badges-->
+                        <div class="badges">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl ease-in duration-300">
+                        <img src="../img/kinunot.jpg" alt="kinunot" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-3">
+                            <span class="font-bold">kinunot</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Canor</span>
+                        </div>
+                        <!--badges-->
+                        <div class="badges">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl ease-in duration-300">
+                        <img src="../img/natong.jpg" alt="Natong" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-3">
+                            <span class="font-bold">Natong</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Canor</span>
+                        </div>
+                        <!--badges-->
+                        <div class="badges">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+                <!--end of card for latest recipe-->
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular Recipe</h4>
+                <div class="mt-8 grid md:grid-cols-2 gap-2 lg:grid-cols-3 gap-2">
+                    <!--cards go here for mo st popular recipe-->
+                    <div class="card hover:shadow-2xl ease-in duration-300">
+                        <img src="../img/Pancit-Bato.webp" alt="Pancit-Bato" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-3">
+                            <span class="font-bold">Pancit Bato</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Canor</span>
+                        </div>
+                        <!--badges-->
+                        <div class="badges">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl ease-in duration-300">
+                        <img src="../img/Kandingga.webp" alt="Kandingga" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-3">
+                            <span class="font-bold">Kandingga</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Canor</span>
+                        </div>
+                        <!--badges-->
+                        <div class="badges">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-2xl ease-in duration-300">
+                        <img src="../img/Laing_Pinangat.jpg" alt="Pinangat" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-3">
+                            <span class="font-bold">Pinangat</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Canor</span>
+                        </div>
+                        <!--badges-->
+                        <div class="badges">
+                            <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center pt-4">
+                    <div class="bg-gray-200 text-gray-400 btn transition ease-in duration-150 hover:bg-slate-600 hover:text-white transform hover:scale-110 hover:bg-opacity-60">
+                        Load more
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
